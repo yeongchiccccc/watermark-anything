@@ -4,8 +4,7 @@ Implementation and pretrained models for the paper [**Watermark Anything**](http
 Our approach allows for embedding (possibly multiple) localized watermarks into images.
 
 <!-- [[`Webpage`](...)] -->
-[[`arXiv`](https://arxiv.org/abs/ARXIV_LINK)]
-[[`OpenReview`](https://openreview.net/forum?id=IkZVDzdC8M)]
+[[`arXiv`](https://arxiv.org/abs/2411.07231)]
 [[`Colab`](https://colab.research.google.com/github/facebookresearch/watermark-anything/blob/main/notebooks/colab.ipynb)]
 
 ![Watermark Anything Overview](assets/splash_wam.jpg)
@@ -229,6 +228,6 @@ If you find this repository useful, please consider giving a star :star: and ple
 @article{sander2024watermark,
   title={Watermark Anything with Localized Messages},
   author={Sander, Tom and Fernandez, Pierre and Durmus, Alain and Furon, Teddy and Douze, Matthijs},
-  journal={arXiv preprint arXiv:ARXIV_LINK},
+  journal={arXiv preprint arXiv:2411.07231},
   year={2024}
 }
