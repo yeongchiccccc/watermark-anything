@@ -30,7 +30,7 @@ pip install -r requirements.txt
 
 ### Weights
 
-Download the pre-trained model weights from:
+Download the pre-trained model weights [here](https://dl.fbaipublicfiles.com/watermark_anything/checkpoint.pth), or via command line:
 ```cmd
 wget https://dl.fbaipublicfiles.com/watermark_anything/checkpoint.pth -P checkpoints/ -P checkpoints/
 ```
@@ -74,6 +74,11 @@ output_dir = "outputs"  # Directory to save the watermarked images
 os.makedirs(output_dir, exist_ok=True)
 ```
 </details>
+
+> [!TIP]
+> You can specify the `wam.scaling_w` factor, which controls the imperceptibility/robustness trade-off. Increasing it will lead to worse images but more robust watermarks, and vice versa.
+> By default, it is set to 2.0, feel free to increase or decrease it to test how it influences the metrics.
+
 
 ### Single Watermark
 
