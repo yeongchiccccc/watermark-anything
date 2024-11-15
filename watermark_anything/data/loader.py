@@ -161,19 +161,13 @@ def custom_collate(batch: list) -> tuple[torch.Tensor, torch.Tensor]:
         # Calculate the union of all masks in this image
         union_mask = torch.max(mask, dim=0).values  # Assuming mask is of shape [num_masks, H, W]
         
-        # Calculate the inverse of the union mask
-        inverse_mask = ~union_mask
-        
         # Pad the mask tensor to have 'max_masks' masks
         pad_size = max_masks - mask.shape[0]
         if pad_size > 0:
             padded_mask = F.pad(mask, pad=(0, 0, 0, 0, 0, pad_size), mode='constant', value=0)
         else:
             padded_mask = mask
-        
-        # Append the inverse mask to the padded mask tensor
-        # padded_mask = torch.cat([padded_mask, inverse_mask.unsqueeze(0)], dim=0)
-        
+            
         padded_masks.append(padded_mask)
     
     # Stack the padded masks
