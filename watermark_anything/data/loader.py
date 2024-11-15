@@ -11,6 +11,7 @@ from pycocotools import mask as maskUtils
 import random
 
 import torch
+import torch.nn.functional as F
 from torch.utils.data import DataLoader, DistributedSampler, default_collate
 from torchvision.datasets import CocoDetection
 from torchvision.datasets.folder import is_image_file, default_loader
@@ -139,11 +140,6 @@ class CocoImageIDWrapper(CocoDetection):
                 masks = torch.zeros((self.max_nb_masks, original_height, original_width), dtype=torch.bool)
             return masks
 
-# Usage remains the same
-
-
-import torch
-import torch.nn.functional as F
 def custom_collate(batch: list) -> tuple[torch.Tensor, torch.Tensor]:
     batch = [item for item in batch if item is not None]
     if not batch:
