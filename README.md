@@ -11,6 +11,7 @@ Our approach allows for embedding (possibly multiple) localized watermarks into 
 
 ![Watermark Anything Overview](assets/splash_wam.jpg)
 
+## 📰 News
 
 ## Requirements
 
