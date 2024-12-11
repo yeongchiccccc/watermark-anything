@@ -69,7 +69,7 @@ def load_model_from_checkpoint(json_path, ckpt_path):
     # Load the model weights
     if os.path.exists(ckpt_path):
         checkpoint = torch.load(ckpt_path, map_location='cpu')
-        wam.load_state_dict(checkpoint['model'])
+        wam.load_state_dict(checkpoint)
         print("Model loaded successfully from", ckpt_path)
         print(params)
     else:

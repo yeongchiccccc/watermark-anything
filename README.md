@@ -13,6 +13,11 @@ Our approach allows for embedding (possibly multiple) localized watermarks into 
 
 ## 📰 News
 
+### [December 12, 2024] - New WAM Model Released Under MIT License!
+- 📢 We are excited to announce the release of the weights for our new model, trained on a subset of the [SA-1B](https://ai.meta.com/datasets/segment-anything/) dataset, now available under the MIT License.
+- We've also enhanced the model's robustness, particularly in handling moving watermarked objects in images, and for the rest it should yield similar results than the model in the publication. 
+
+
 ## Requirements
 
 
@@ -32,14 +37,23 @@ pip install -r requirements.txt
 
 ### Weights
 
-Download the pre-trained model weights [here](https://dl.fbaipublicfiles.com/watermark_anything/checkpoint.pth), or via command line:
+Download the latest pre-trained model weights - trained on [SA-1B](https://ai.meta.com/datasets/segment-anything/) and under MIT license - [here](https://dl.fbaipublicfiles.com/watermark_anything/wam_mit.pth), or via command line:
 ```cmd
-wget https://dl.fbaipublicfiles.com/watermark_anything/checkpoint.pth -P checkpoints/ -P checkpoints/
+!wget https://dl.fbaipublicfiles.com/watermark_anything/wam_mit.pth -P checkpoints/ -P checkpoints/ checkpoints/
 ```
 
-### Data
+<details>
+<summary> Download the weights of the model from the publication (Non commercial License)</summary>
+<br>
 
-For training our models we use the [COCO](https://cocodataset.org/#home) dataset, with additional safety filters and where faces are blurred.
+The weights of the original model used in the publication are also available:
+
+```cmd
+!wget https://dl.fbaipublicfiles.com/watermark_anything/wam_coco.pth -P checkpoints/ -P checkpoints/ checkpoints/
+```
+</details>
+
+
 
 ## Inference
 
@@ -76,6 +90,7 @@ output_dir = "outputs"  # Directory to save the watermarked images
 os.makedirs(output_dir, exist_ok=True)
 ```
 </details>
+
 
 > [!TIP]
 > You can specify the `wam.scaling_w` factor, which controls the imperceptibility/robustness trade-off. Increasing it will lead to worse images but more robust watermarks, and vice versa.
@@ -217,7 +232,13 @@ torchrun --nproc_per_node=8 train.py \
 
 ## License
 
-The model is licensed under the [CC-BY-NC](LICENSE).
+The code and the new model trained on the [SA-1B dataset](https://ai.meta.com/datasets/segment-anything/) are under the [MIT License](LICENSE)!
+
+> [!IMPORTANT NOTE]
+> In the paper, the evaluated model was trained on the [COCO](https://cocodataset.org/#home) dataset (with additional safety filters and where faces are blurred). For reproducibility purposes, we also release the weights (see above "Weights" subsection), but this model is under the [CC-BY-NC License](LICENSE-COCO).
+
+
+
 
 ## Contributing
 
