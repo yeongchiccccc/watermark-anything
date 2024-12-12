@@ -234,7 +234,7 @@ torchrun --nproc_per_node=8 train.py \
 
 The code and the new model trained on the [SA-1B dataset](https://ai.meta.com/datasets/segment-anything/) are under the [MIT License](LICENSE)!
 
-> [!IMPORTANT NOTE]
+> [!TIP]
 > In the paper, the evaluated model was trained on the [COCO](https://cocodataset.org/#home) dataset (with additional safety filters and where faces are blurred). For reproducibility purposes, we also release the weights (see above "Weights" subsection), but this model is under the [CC-BY-NC License](LICENSE-COCO).
 
 
