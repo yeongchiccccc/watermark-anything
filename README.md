@@ -57,8 +57,8 @@ You can also download the model using Hugging Face via:
 ```python
 from huggingface_hub import hf_hub_download
 ckpt_path = hf_hub_download(
-    repo_id="facebook/watermark-anything",  # The repository ID
-    filename="checkpoint.pth"  # Dynamically determined filename
+    repo_id="facebook/watermark-anything",
+    filename="checkpoint.pth"
 )
 ```
 
