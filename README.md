@@ -53,6 +53,14 @@ The weights of the original model used in the publication are also available:
 ```
 </details>
 
+You can also download the model using Hugging Face via:
+```python
+from huggingface_hub import hf_hub_download
+ckpt_path = hf_hub_download(
+    repo_id="facebook/watermark-anything",  # The repository ID
+    filename=wam.pth  # Dynamically determined filename
+)
+```
 
 
 ## Inference
