@@ -39,7 +39,7 @@ pip install -r requirements.txt
 
 Download the latest pre-trained model weights - trained on [SA-1B](https://ai.meta.com/datasets/segment-anything/) and under MIT license - [here](https://dl.fbaipublicfiles.com/watermark_anything/wam_mit.pth), or via command line:
 ```cmd
-!wget https://dl.fbaipublicfiles.com/watermark_anything/wam_mit.pth -P checkpoints/ -P checkpoints/
+wget https://dl.fbaipublicfiles.com/watermark_anything/wam_mit.pth -P checkpoints/
 ```
 
 <details>
@@ -49,7 +49,7 @@ Download the latest pre-trained model weights - trained on [SA-1B](https://ai.me
 The weights of the original model used in the publication are also available:
 
 ```cmd
-!wget https://dl.fbaipublicfiles.com/watermark_anything/wam_coco.pth -P checkpoints/ -P checkpoints/
+wget https://dl.fbaipublicfiles.com/watermark_anything/wam_coco.pth -P checkpoints/
 ```
 </details>
 
