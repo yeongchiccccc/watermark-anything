@@ -262,9 +262,9 @@ See [contributing](.github/CONTRIBUTING.md) and the [code of conduct](.github/CO
 If you find this repository useful, please consider giving a star :star: and please cite as:
 
 ```bibtex
-@article{sander2024watermark,
+@inproceedings{sander2024watermark,
   title={Watermark Anything with Localized Messages},
   author={Sander, Tom and Fernandez, Pierre and Durmus, Alain and Furon, Teddy and Douze, Matthijs},
-  journal={arXiv preprint arXiv:2411.07231},
-  year={2024}
+  booktitle={International Conference on Learning Representations (ICLR)},
+  year={2025}
 }
