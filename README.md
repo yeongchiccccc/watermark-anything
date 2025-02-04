@@ -13,6 +13,8 @@ Our approach allows for embedding (possibly multiple) localized watermarks into 
 
 ## 📰 News
 
+### [January 30, 2025] - Watermark Anything is [accepted](https://openreview.net/forum?id=IkZVDzdC8M) at ICLR 2025!
+
 ### [December 12, 2024] - New WAM Model Released Under MIT License!
 - 📢 We are excited to announce the release of the weights for our new model, trained on a subset of the [SA-1B](https://ai.meta.com/datasets/segment-anything/) dataset, now available under the MIT License.
 - We've also enhanced the model's robustness, particularly in handling moving watermarked objects in images, and for the rest it should yield similar results than the model in the publication. 
