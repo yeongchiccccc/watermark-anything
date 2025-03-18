@@ -256,6 +256,8 @@ See [contributing](.github/CONTRIBUTING.md) and the [code of conduct](.github/CO
 
 ## See Also
 
+- [**VideoSeal**](https://github.com/facebookresearch/videoseal).  
+If you need good models for image and video watermarking (without watermark localization and the ability to extract multiple messages). VideoSeal hides 256-bits in Y channel only.
 - [**AudioSeal**](https://github.com/facebookresearch/audioseal)
 - [**Segment Anything**](https://github.com/facebookresearch/segment-anything/)
 
