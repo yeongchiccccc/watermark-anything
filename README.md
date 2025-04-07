@@ -6,6 +6,7 @@ Our approach allows for embedding (possibly multiple) localized watermarks into 
 <!-- [[`Webpage`](...)] -->
 [[`arXiv`](https://arxiv.org/abs/2411.07231)]
 [[`Colab`](https://colab.research.google.com/github/facebookresearch/watermark-anything/blob/main/notebooks/colab.ipynb)]
+[[`HF Demo`]](https://huggingface.co/spaces/xiaoyao9184/watermark-anything)
 [[`Podcast`](https://notebooklm.google.com/notebook/6c69b3f8-b1a6-41c4-92fb-c416903ceb49/audio)]
 [[`HN`](https://news.ycombinator.com/item?id=42113674)]
 
